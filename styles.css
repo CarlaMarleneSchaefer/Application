@@ -600,7 +600,7 @@ a {
     }
 
     .hero {
-        padding-top: 10rem;
+        padding-top: 16rem; /* Increased vertical space to clear the tall mobile navbar */
     }
     
     .hero-layout, .hero-content {
