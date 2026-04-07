@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const speed = Math.sqrt(vel.x * vel.x + vel.y * vel.y);
             
             // Stretch horizontally and squeeze vertically based on speed
-            const scaleX = 1 + Math.min(speed * 0.04, 1.5);
-            const scaleY = 1 - Math.min(speed * 0.015, 0.5);
+            const scaleX = 1 + Math.min(speed * 0.015, 0.6);
+            const scaleY = 1 - Math.min(speed * 0.01, 0.3);
             
             // Apply all transforms: position, center alignment, rotation, and scale
             cursor.style.transform = `translate(${pos.x}px, ${pos.y}px) translate(-50%, -50%) rotate(${angle}deg) scale(${scaleX}, ${scaleY})`;
